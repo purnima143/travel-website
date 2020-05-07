@@ -1,0 +1,294 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#header {
+  height: 100vh;
+  background: rgba(11, 2, 22, 0.5);
+}
+.video-background {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-background {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-background {
+    width: auto;
+    height: 100%;
+  }
+}
+#header .content {
+  color: aliceblue;
+  position: relative;
+  font-size: 28px;
+  text-align: left;
+  z-index: 1;
+  top: 30vh;
+  margin-left: 40px;
+}
+#header .content h1 {
+  font-size: 60px;
+  color: white;
+  text-shadow: orangered 2px 2px;
+}
+#header .content h3 {
+  font-size: 40px;
+  color: white;
+  font-family: "Muli", sans-serif;
+}
+.change-content:after {
+  content: "";
+  animation: changetext 15s infinite linear;
+  color: orangered;
+  font-weight: 700;
+  font-size: 65px;
+  text-shadow: black 2px 2px;
+}
+@keyframes changetext {
+  0% {
+    content: "Delhi";
+  }
+  20% {
+    content: "Mumbai";
+  }
+  35% {
+    content: "Agra";
+  }
+  50% {
+    content: "Mysore";
+  }
+  60% {
+    content: "Rajasthan";
+  }
+  80% {
+    content: "Goa";
+  }
+  100% {
+    content: "Darjeeling";
+  }
+}
+#header .content a {
+  transition: all 0.5s ease;
+}
+#btnone {
+  color: white;
+  font-size: 20px;
+  background: #ff4500;
+}
+#btntwo {
+  color: orangered;
+  font-size: 20px;
+  background: white;
+}
+#btnone:hover {
+  color: orangered;
+  font-size: 20px;
+  background: white;
+}
+
+#btntwo:hover {
+  color: white;
+  font-size: 20px;
+  background: orangered;
+}
+
+#header .nav-item .nav-link {
+  color: white !important;
+  font-size: 20px;
+  margin-right: 20px;
+}
+#header .nav-item .nav-link:hover {
+  color: yellow !important;
+  font-size: 25px;
+  margin-right: 20px;
+}
+.dropdown .dropdown-menu {
+  background-color: rgba(11, 2, 22, 0.5);
+}
+.dropdown .dropdown-menu .dropdown-item {
+  color: white;
+}
+.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #ffff00;
+  color: black;
+}
+#find-place {
+  background-color: black;
+  height: 150px;
+  position: relative;
+  top: -40px;
+}
+#place-detail {
+  float: left;
+}
+#find-place .container h5 {
+  float: left;
+  color: rgb(172, 168, 168);
+  font-family: "Barlow", sans-serif;
+  font-size: 30px;
+}
+#find-place .container {
+  margin: auto;
+  height: 100px;
+  padding: 30px;
+}
+#place-detail {
+  margin-left: 30px;
+}
+#place-detail input {
+  width: 160px;
+  height: 40px;
+  margin-left: 30px;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  border: 0.4px solid rgb(170, 170, 179);
+  padding: 10px;
+  outline: none;
+}
+#placetogo {
+  width: 150px;
+  height: 42px;
+  margin-left: 30px;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  border: 0.4px solid rgb(170, 170, 179);
+  padding: 10px;
+  outline: none;
+}
+#placetogo option:hover {
+  background-color: red !important;
+}
+#find-place .btn {
+  background-color: orangered;
+  margin-left: 30px;
+  width: 100px;
+  color: white;
+}
+#find-place .btn:hover {
+  background-color: #ffa500;
+}
+#tour-place{
+  margin-top:100px;
+}
+#tour-place .service-icon {
+  height: 100px;
+  background-color: rgb(248, 248, 244);
+  border: orange 2px solid;
+  padding: 20px;
+  border-radius: 50%;
+  margin-left: 50px;
+  position: relative;
+  top: -30px;
+}
+#tour-place .row .col:nth-child(even) {
+  background-color: orange;
+  color: black;
+  font-weight: 500;
+}
+#tour-place .row .col:nth-child(odd) {
+  background-color: black;
+  color: orange;
+  font-weight: 500;
+}
+
+#tour-place .col h4 {
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+}
+#tour-place .col p {
+  text-align: center;
+}
+#tour-place .row .col:hover {
+  background-color: orangered;
+  color: black;
+  transition: all ease 1s;
+}
+#journey-package {
+  background-color: black;
+  padding-top: 20px;
+  margin: 100px 0px;
+}
+#journey-package h1 {
+  text-align: center;
+  margin: 20px;
+  color: orange;
+  font-family: "Muli", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+#journey-package p {
+  color: white;
+}
+.buttonforall a:hover {
+  background-color: orange;
+}
+#experience img {
+  height: 200px;
+  padding: 10px;
+  width: 290px;
+}
+#experience .bottom-left {
+  position: absolute;
+  bottom: 12px;
+  left: 28px;
+  color: black;
+  padding-left: 10px;
+  width: 200px;
+  background-color: orange;
+}
+.pressed {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
+.pics:hover {
+  transform: scale(1.1);
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.7;
+}
+#experience h1,
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+#experience h1 {
+  color: orangered;
+  letter-spacing: 2px;
+  font-family: "Muli", sans-serif;
+}
+#footer {
+  height: 350px;
+  background-color: orangered;
+  margin-top: 40px;
+  padding: 20px;
+}
+#footer h1 {
+  color: black;
+  letter-spacing: 2px;
+  font-family: "Muli", sans-serif;
+}
+#footer h1,
+p {
+  text-align: center;
+  margin: 20px;
+}
+#footer p {
+  color: white;
+}
+#footer:hover {
+  background-color: orange;
+}
+

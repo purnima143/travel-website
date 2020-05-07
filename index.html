@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <title>MeraDesh</title>
+    <link
+      rel="icon"
+      href="flaticon/animals.png"
+      type="image/icon"
+      sizes="16x16"
+    />
+
+    <link href="make.css" rel="stylesheet" type="text/css" />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;500;700&family=Muli:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href=""
+          ><img src="LogoMaker.png" style="height: 106px;"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Tours
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#journey-package">Destination</a>
+                <a class="dropdown-item" href="#">Cruises</a>
+                <a class="dropdown-item" href="#">Hotels</a>
+                <a class="dropdown-item" href="#">Booking</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tour-place">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <video autoplay loop class="video-background" muted plays-inline>
+        <source src="India - 444.mp4" type="video/mp4" />
+      </video>
+      <div class="content">
+        <h1>Welcome to India</h1>
+        <h3>Do come and Visit<span class="change-content"> </span></h3>
+        <p style="text-align: left;">"India once is not enough"</p>
+        <a href="#" class="btn" id="btnone">Lets Start</a>
+        <a href="#" class="btn" id="btntwo">Signup</a>
+      </div>
+    </section>
+    <section id="find-place">
+      <div class="container">
+        <h5>Where do you want to go?</h5>
+        <div id="place-detail">
+          <input type="text" placeholder="Where to go?" />
+          <input type="date" placeholder="date" />
+          <select id="placetogo" name="place-type">
+            <option value="volvo">Travel Type</option>
+
+            <option value="HillStation">Hill Station</option>
+            <option value="Beach">Beach</option>
+            <option value="Temple">Temple</option>
+            <option value="Lake">Lake</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Search</button>
+      </div>
+    </section>
+    <section id="tour-place">
+      <div class="container">
+        <h1></h1>
+        <div class="row">
+          <div class="col md-3">
+            <img
+              src="flaticon/around.png"
+              class="service-icon animated fadeIn delay-1s"
+            />
+            <h4>Amazing Travels</h4>
+            <p>
+              Separated they live in Bookmarksgrove right at the coast of the
+              Semantics, a large language ocean. A small river named Duden flows
+              by their place and supplies
+            </p>
+          </div>
+          <div class="col md-3">
+            <img
+              src="flaticon/boat.png"
+              class="service-icon animated fadeIn delay-1s"
+            />
+
+            <h4 class="animated zoomIn delay-1s">Our Crusine</h4>
+            <p>
+              Separated they live in Bookmarksgrove right at the coast of the
+              Semantics, a large language ocean. A small river named Duden flows
+              by their place and supplies
+            </p>
+          </div>
+          <div class="col md-3">
+            <img
+              src="flaticon/car-service.png"
+              class="service-icon animated fadeIn delay-1s"
+            />
+
+            <h4 class="animated zoomIn delay-1s">Book your Trip</h4>
+            <p>
+              Separated they live in Bookmarksgrove right at the coast of the
+              Semantics, a large language ocean. A small river named Duden flows
+              by their place and supplies
+            </p>
+          </div>
+          <div class="col md-3">
+            <img
+              src="flaticon/support.png"
+              class="service-icon animated fadeIn delay-1s"
+            />
+
+            <h4 class="animated zoomIn delay-1s">Nice Support</h4>
+            <p>
+              Separated they live in Bookmarksgrove right at the coast of the
+              Semantics, a large language ocean. A small river named Duden flows
+              by their place and supplies
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey-package">
+      <h1>Journey Package</h1>
+      <p style="text-align: center; color: grey;">
+        Suffered alteration in some form, by injected humour<br />
+        or good day randomised booth anim 8-bit hella wolf moon beard words.
+      </p>
+      <div class="grid-container">
+        <div class="flip_cover">
+          <div class="flip-card-inside">
+            <div class="front">
+              <img src="images/parth-vyas-J4Ui2ch3oRU-unsplash.jpg" />
+            </div>
+            <div class="back" style="background: orangered;">
+              <div class="back-header">
+                <img src="images/parth-vyas-J4Ui2ch3oRU-unsplash.jpg" />
+              </div>
+              <div class="back-footer">
+                <h2>MUMBAI</h2>
+                <p>Mumbai never sleeps<br />City of Dreams<br /></p>
+                <a href="" class="btn">Visit Mumbai</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip_cover">
+          <div class="flip-card-inside">
+            <div class="front">
+              <img src="images/roberto-reposo-gwraJHxsMd0-unsplash.jpg" />
+            </div>
+            <div class="back" style="background: orange;">
+              <div class="back-header">
+                <img
+                  src="images/koushik-chowdavarapu-mNFlngSAQUg-unsplash.jpg"
+                />
+              </div>
+              <div class="back-footer">
+                <h2>AGRA</h2>
+                <p>
+                  The city of Taj Mahal,<br />the monument of eternal love<br />
+                </p>
+                <a href="" class="btn">Visit Agra</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flip_cover">
+          <div class="flip-card-inside">
+            <div class="front">
+              <img src="images/15.jpg" />
+            </div>
+            <div class="back" style="background: orange;">
+              <div class="back-header">
+                <img src="images/15.jpg" />
+              </div>
+              <div class="back-footer">
+                <h2>Delhi</h2>
+                <p>Dildar Dilli<br />Captial of India<br /></p>
+                <a href="" class="btn">Visit Delhi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flip_cover">
+          <div class="flip-card-inside">
+            <div class="front">
+              <img src="images/abhishek-chakraborty-d2eVURGcqjc-unsplash.jpg" />
+            </div>
+            <div class="back" style="background: orangered;">
+              <div class="back-header">
+                <img src="images/ravi-singh-7i7NgMk7dCs-unsplash.jpg" />
+              </div>
+              <div class="back-footer">
+                <h2>Kolkata</h2>
+                <p>Cultural capital of India<br />City of Joy<br /></p>
+                <a href="" class="btn">Visit Kolkata</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip_cover">
+          <div class="flip-card-inside">
+            <div class="front">
+              <img src="images/kirti-kalla-JRhvllDBhzs-unsplash.jpg" />
+            </div>
+            <div class="back" style="background: orangered;">
+              <div class="back-header">
+                <img src="images/16.jpg" />
+              </div>
+              <div class="back-footer">
+                <h2>Rajasthan</h2>
+                <p>Padharo maare desh<br />City of Forts,hills,Deserts<br /></p>
+                <a href="" class="btn">Visit Rajasthan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flip_cover">
+          <div class="flip-card-inside">
+            <div class="front">
+              <img src="images/12.jpg" />
+            </div>
+            <div class="back" style="background: orange;">
+              <div class="back-header">
+                <img src="images/11.jpg" />
+              </div>
+              <div class="back-footer">
+                <h2>BANGALORE</h2>
+                <p>Silicon valley<br />City of Technology and greenary<br /></p>
+                <a href="" class="btn">Visit Bangalore</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flip_cover">
+          <div class="flip-card-inside">
+            <div class="front">
+              <img src="images/khushbu-hirpara-P3PiPsdWNgo-unsplash.jpg" />
+            </div>
+            <div class="back" style="background: orangered;">
+              <div class="back-header">
+                <img src="images/khushbu-hirpara-P3PiPsdWNgo-unsplash.jpg" />
+              </div>
+              <div class="back-footer">
+                <h2>Goa</h2>
+                <p>A perfect Holidays destination</p>
+                <a href="" class="btn">Visit Goa</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flip_cover">
+          <div class="flip-card-inside">
+            <div class="front">
+              <img src="images/13.jpg" />
+            </div>
+            <div class="back" style="background-color: orange;">
+              <div class="back-header">
+                <img src="images/13.jpg" />
+              </div>
+              <div class="back-footer">
+                <h2>Kerala</h2>
+                <p>God's own country<br />City of Dreams<br /></p>
+                <a href="" class="btn">Visit Kerala</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttonforall" style="text-align: center;">
+        <a
+          href="http://www.example.com"
+          class="btn"
+          style="width: 130px; background-color: orangered; color: white;"
+          >More Places</a
+        >​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+      </div>
+      ​
+    </section>
+    <section id="experience">
+      <div class="container">
+        <h1>Immersive Experiences</h1>
+        <p>In the land of opulence, let loose and discover yourself</p>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <a
+              href="https://www.incredibleindia.org/content/incredible-india-v2/en/experiences/adventure.html"
+            >
+              <img
+                src="images/img/angga-indratama-LspBqN9gzAg-unsplash.jpg"
+                class="pics"
+              />
+              <div class="bottom-left">Adventure</div></a
+            >
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a
+              href="https://www.incredibleindia.org/content/incredible-india-v2/en/experiences/heritage.html"
+            >
+              <img
+                src="images/img/architecture-3267177_1920.jpg"
+                class="pics"
+              />
+              <div class="bottom-left">Heritage</div></a
+            >
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a
+              href="https://www.incredibleindia.org/content/incredible-india-v2/en/experiences/spiritual.html"
+            >
+              <img
+                src="images/img/deepak-kosta-tlu3Zpcw6nY-unsplash.jpg"
+                class="pics"
+              />
+              <div class="bottom-left">Spiritual</div></a
+            >
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a
+              href="https://www.incredibleindia.org/content/incredible-india-v2/en/experiences/art.html"
+            >
+              <img
+                src="images/img/judy-fong-D3n4MpV4G-U-unsplash.jpg"
+                class="pics"
+              />
+              <div class="bottom-left">Art</div></a
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <a
+              href="https://www.incredibleindia.org/content/incredible-india-v2/en/experiences/food-and-cuisine.html"
+            >
+              <img
+                src="images/img/lior-shapira-GKxsKNTfZd8-unsplash.jpg"
+                alt=""
+                class="pics"
+              />
+              <div class="bottom-left">Food</div></a
+            >
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a
+              href="https://www.incredibleindia.org/content/incredible-india-v2/en/experiences/museums.html"
+            >
+              <img src="images/img/sculpture-gallery.jpg" class="pics" />
+              <div class="bottom-left">Museum</div></a
+            >
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a
+              href="https://www.incredibleindia.org/content/incredible-india-v2/en/experiences/Shopping.html"
+            >
+              <img
+                src="images/img/christian-burri-OiOLKlYGv94-unsplash.jpg"
+                class="pics"
+                alt=""
+              />
+              <div class="bottom-left">Shopping</div></a
+            >
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a
+              href="https://www.incredibleindia.org/content/incredible-india-v2/en/experiences/yoga-and-wellness.html"
+            >
+              <img
+                src="images/img/bisesh-gurung-DWZtqyxYU4s-unsplash.jpg"
+                class="pics"
+                alt=""
+              />
+              <div class="bottom-left">Yoga and wellness</div></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="container">
+        <h1>Incredible India</h1>
+        <p>
+          India has a myriad of landscapes, great heritage and culture, varied
+          flora and fauna. The country is the most preferred tourist
+          destinations for tourists from all across the world for its
+          picturesque landscapes, spectacular waterfalls, habitat of the
+          country's largest tiger reserve and home to the warmest people on
+          earth.
+        </p>
+        <div
+          id="contact-detail"
+          class="service-icon service-icon animated infinite fadeIn delay-1s"
+        >
+          <h3 style="color: black; margin: 10px;">Contact us</h3>
+          <p style="float: left;">
+            XYZ,New Delhi,India<br />
+            Contact no.:987654345<br />
+            Email:meradesh123@gmail.com
+          </p>
+          <p
+            style="
+              float: left;
+              font-size: 25px;
+              color: black;
+              margin-left: 200px;
+            "
+          >
+            Made by Purnima Sharma ♥
+          </p>
+          <br />
+          <br />
+        </div>
+        <div
+          style="
+            height: 0.7px;
+            width: 1100px;
+            background-color: orange;
+            margin-top: 40px;
+          "
+        ></div>
+      </div>
+    </section>
+    <script src="smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+  </body>
+</html>
